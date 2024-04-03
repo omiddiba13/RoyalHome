@@ -1,14 +1,16 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
+import logo from "../public/images/logo.png";
+import { FaRegUser } from "react-icons/fa6";
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg">
       <div className="container">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+        <Link to={"/"}>
+          <img src={logo} alt="" style={{ width: "150px", height: "60px" }} />{" "}
+        </Link>
         <button
-          className="navbar-toggler "
+          className="navbar-toggler ms-auto"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -17,8 +19,12 @@ export default function NavBar() {
           aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div className="navbar-nav">
+        <Link to="login" className=" btn ms-3 d-lg-none">
+          <FaRegUser size={20} />
+        </Link>
+        <hr />
+        <div className="collapse navbar-collapse mt-3" id="navbarNavAltMarkup">
+          <div className="navbar-nav ms-auto justify-content-between">
             <a className="nav-link active" aria-current="page" href="#">
               Home
             </a>
@@ -32,6 +38,9 @@ export default function NavBar() {
               Disabled
             </a>
           </div>
+          <Link to="login" className=" btn btn-danger ms-5 d-none d-lg-block">
+            login
+          </Link>
         </div>
       </div>
     </nav>
