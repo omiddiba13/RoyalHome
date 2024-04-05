@@ -1,13 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import logo from "../public/images/logo2.png";
+import { Link, NavLink } from "react-router-dom";
+import logo from "../public/images/logo1.png";
 import { FaRegUser } from "react-icons/fa6";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 export default function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg mb-5 bg-dark" data-bs-theme="dark">
-      <div className="container-fluid">
+      <div className="container">
         <Link to={"/"}>
           <img src={logo} alt="" style={{ width: "", height: "" }} />{" "}
         </Link>
@@ -38,15 +38,15 @@ export default function NavBar() {
         <hr />
         <div className="collapse navbar-collapse mt-3" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto justify-content-between">
-            <a className="nav-link fs-5 " aria-current="page" href="#">
+            <NavLink to={"/"} className="nav-link fs-5 ">
               Home
-            </a>
-            <a className="nav-link fs-5" href="#">
-              Features
-            </a>
-            <a className="nav-link fs-5" href="#">
-              Pricing
-            </a>
+            </NavLink>
+            <NavLink to="/about" className="nav-link fs-5">
+              About Us
+            </NavLink>
+            <NavLink to="/products" className="nav-link fs-5">
+              Products
+            </NavLink>
           </div>
           <Link
             to="login"
