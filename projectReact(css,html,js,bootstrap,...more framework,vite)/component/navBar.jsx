@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../public/images/logo.png";
+import logo from "../public/images/logo2.png";
 import { FaRegUser } from "react-icons/fa6";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg mb-5">
+    <nav className="navbar navbar-expand-lg mb-5 bg-dark" data-bs-theme="dark">
       <div className="container-fluid">
         <Link to={"/"}>
-          <img src={logo} alt="" style={{ width: "150px", height: "60px" }} />{" "}
+          <img src={logo} alt="" style={{ width: "", height: "" }} />{" "}
         </Link>
         <button
           className="navbar-toggler ms-auto"
@@ -38,20 +38,19 @@ export default function NavBar() {
         <hr />
         <div className="collapse navbar-collapse mt-3" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto justify-content-between">
-            <a className="nav-link active" aria-current="page" href="#">
+            <a className="nav-link fs-5 " aria-current="page" href="#">
               Home
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link fs-5" href="#">
               Features
             </a>
-            <a className="nav-link" href="#">
+            <a className="nav-link fs-5" href="#">
               Pricing
             </a>
-            <a className="nav-link disabled" aria-disabled="true">
-              Disabled
-            </a>
           </div>
-          <Link to="login" className=" btn btn-danger ms-5 d-none d-lg-block">
+          <Link
+            to="login"
+            className=" btn btn-danger-v2 ms-2 d-none d-lg-block">
             login
           </Link>
         </div>

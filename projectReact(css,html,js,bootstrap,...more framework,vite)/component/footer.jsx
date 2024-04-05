@@ -2,8 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { CiLocationArrow1 } from "react-icons/ci";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
+import { BsFillTelephoneFill, BsFacebook } from "react-icons/bs";
+import {
+  AiOutlineMail,
+  AiOutlineInstagram,
+  AiFillTwitterCircle,
+  AiFillYoutube,
+} from "react-icons/ai";
 
 export default function Footer() {
   return (
@@ -58,7 +63,27 @@ export default function Footer() {
                 id="exampleFormControlInput1"
                 placeholder="name@example.com"
               />
-              <button className="btn btn-danger-v2 m-2">Submits</button>
+              <button className="btn btn-danger-v2 m-2">
+                <span className="fs-6">Submits</span>
+              </button>
+            </div>
+            <hr />
+            <div className="row row-cols-auto ">
+              <Link className="nav-link-v2" href="#">
+                <AiFillYoutube size={28} className="m-1 border rounded" />
+              </Link>
+              <Link className="nav-link-v2" aria-current="page" href="">
+                <AiOutlineInstagram
+                  size={28}
+                  className="m-1 border rounded  "
+                />
+              </Link>{" "}
+              <Link className="nav-link-v2" href="#">
+                <BsFacebook size={28} className="m-1 border rounded" />
+              </Link>{" "}
+              <Link class="nav-link-v2">
+                <AiFillTwitterCircle size={28} className="m-1 border rounded" />
+              </Link>
             </div>
           </div>
 
