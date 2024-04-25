@@ -6,10 +6,12 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 
 export default function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg mb-5 bg-dark" data-bs-theme="dark">
+    <nav
+      className="navbar navbar-expand-lg mb-5 bg-dark fixed-top"
+      data-bs-theme="dark">
       <div className="container">
         <Link to={"/"}>
-          <img src={logo} alt="" style={{ width: "", height: "" }} />{" "}
+          <img src={logo} alt="" style={{ width: "75%" }} />
         </Link>
         <button
           className="navbar-toggler ms-auto"

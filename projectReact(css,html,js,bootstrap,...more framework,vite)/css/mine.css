@@ -5,4 +5,58 @@
   color: #fff;
 }
 
+#optionsBuy {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -4rem;
+}
+#homeCatIcons .col {
+  transition: all 500ms;
+}
+#homeCatIcons .col:hover {
+  transform: translate(0, -0.5rem);
+}
+/* .coverCards {
+  background-image: url(../public/images/fe-property-img-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+} */
+.flag {
+  clip-path: polygon(100% 0, 100% 100%, 48% 65%, 48% 65%, 0 100%, 0 0);
 
+  padding-bottom: 1rem;
+  transition: all 300ms;
+}
+.flag:hover {
+  padding-bottom: 1.5rem;
+}
+.fa-stack {
+  display: flex;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em;
+  align-items: center;
+}
+.fa-stack-2x {
+  font-size: 2em;
+}
+.fa-stack-3x {
+  font-size: 3em;
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: var(--fa-stack-z-index, auto);
+}
