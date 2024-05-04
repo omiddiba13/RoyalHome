@@ -1,39 +1,3 @@
-// import React from "react";
-// import coverCardsSells from "../public/images/fe-property-img-2.jpg";
-// import { AiFillStar } from "react-icons/ai";
-
-// export default function CardsSells() {
-//   return (
-//     <div className="container-fluid border-black col-lg-3 col-md-2 col-sm-1 overflow-hidden border rounded-2 ">
-//       <div>
-//         <div className="position-relative">
-//           <img src={coverCardsSells} className="w-100" />
-//           <div className="position-absolute top-0 start-0 bottom-0 end-0  d-flex flex-column justify-content-between ">
-//             <div className="end-100 align-self-end">
-//               <div className="container-fluid">
-//                 <div className="flag bg-success  ">
-//                   {" "}
-//                   <AiFillStar className="" color="#fff" />
-//                 </div>
-//                 <div className="flag bg-success col">
-//                   {" "}
-//                   <AiFillStar className="" color="#fff" />
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//       <div className=" container">
-//         <div>
-//           <h5 className="text-danger pb-2">House</h5>
-//           <h6>Modern Apartment </h6>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 import {
   FaBath,
   FaBed,
@@ -62,9 +26,12 @@ export const PropertyCard = ({
   showHot,
   forRent,
   forSale,
+  animated,
 }) => {
   return (
-    <div className="border border-secondary border-opacity-50 rounded-2 overflow-hidden">
+    <div
+      className="border border-secondary border-opacity-50 rounded-2 overflow-hidden bg-white"
+      data-animated={animated}>
       <div className="position-relative">
         <img src={properyPic} alt={propertTitle} className="w-100" />
         <div className="position-absolute top-0 start-0 bottom-0 end-0  d-flex flex-column justify-content-between">

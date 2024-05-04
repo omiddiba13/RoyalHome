@@ -7,7 +7,7 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 export default function NavBar() {
   return (
     <nav
-      className="navbar navbar-expand-lg mb-5 bg-dark fixed-top"
+      className="navbar navbar-expand-lg  bg-dark sticky-top"
       data-bs-theme="dark">
       <div className="container">
         <Link to={"/"}>
@@ -46,8 +46,8 @@ export default function NavBar() {
             <NavLink to="/about" className="nav-link fs-5">
               About Us
             </NavLink>
-            <NavLink to="/products" className="nav-link fs-5">
-              Products
+            <NavLink to="PropertyLists" className="nav-link fs-5">
+              Property
             </NavLink>
           </div>
           <Link

@@ -60,3 +60,33 @@
   width: 100%;
   z-index: var(--fa-stack-z-index, auto);
 }
+[data-animated="true"] {
+  transition: 500ms;
+}
+[data-animated="true"]:hover {
+  box-shadow: 0 0.5rem 1rem #0000002b;
+  transform: translate(0, -0.5rem);
+}
+
+/* /sm */
+@media (min-width: 320px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #optionsBuy {
+    bottom: -4rem;
+  }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

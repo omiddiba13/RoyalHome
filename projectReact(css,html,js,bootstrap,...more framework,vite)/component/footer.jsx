@@ -69,19 +69,19 @@ export default function Footer() {
             </div>
             <hr />
             <div className="row row-cols-auto ">
-              <Link className="nav-link-v2" href="#">
+              <Link className="nav-link" href="#">
                 <AiFillYoutube size={28} className="m-1 border rounded" />
               </Link>
-              <Link className="nav-link-v2" aria-current="page" href="">
+              <Link className="nav-link" aria-current="page" href="">
                 <AiOutlineInstagram
                   size={28}
                   className="m-1 border rounded  "
                 />
               </Link>{" "}
-              <Link className="nav-link-v2" href="#">
+              <Link className="nav-link" href="#">
                 <BsFacebook size={28} className="m-1 border rounded" />
               </Link>{" "}
-              <Link class="nav-link-v2">
+              <Link class="nav-link">
                 <AiFillTwitterCircle size={28} className="m-1 border rounded" />
               </Link>
             </div>
