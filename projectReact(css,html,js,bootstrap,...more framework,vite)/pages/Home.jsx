@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import banner1 from "../public/images/banner-1.jpg";
 import cat1 from "../public/images/category-1.png";
@@ -10,6 +10,7 @@ import cat6 from "../public/images/category-6.png";
 import Typewriter from "typewriter-effect";
 import { HomeCatIcon } from "../component/HomeCatIcon";
 import { PropertyCard } from "../component/PropertyCard";
+
 import a from "../public/images/fe-property-img-2.jpg";
 ///swiper import
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
@@ -19,12 +20,15 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Loading } from "../component/Loading";
 /// swiper end
 
 /////////
 export const Home = () => {
   return (
     <>
+      
+
       <div className="position-absolute w-100 vh-100 top-0 start-0 z-n1">
         <img
           src={banner1}

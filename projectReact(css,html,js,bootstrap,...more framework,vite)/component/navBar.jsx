@@ -51,7 +51,7 @@ export default function NavBar() {
             </NavLink>
           </div>
           <Link
-            to="login"
+            to="Login"
             className=" btn btn-danger-v2 ms-2 d-none d-lg-block">
             login
           </Link>

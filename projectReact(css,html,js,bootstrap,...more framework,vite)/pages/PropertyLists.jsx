@@ -11,28 +11,12 @@ import {
   FaArrowRight,
 } from "react-icons/fa6";
 import TopRated from "../component/Toprate";
+import Breadcrumb from "../component/breadcrumb";
 
 export default function PropertyLists() {
   return (
     <section className="container-fluid bg-body-secondary">
-      <div className="row">
-        <nav className="m-3">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <Link to={"/"} className="text-decoration-none text-black">
-                Home
-              </Link>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              <Link
-                to={"PropertyLists"}
-                className="text-decoration-none text-danger-v2">
-                PropertyLists
-              </Link>
-            </li>
-          </ol>
-        </nav>
-      </div>
+      <Breadcrumb pages={"PropertyLists"} />
       <div className="">
         <h1 className="fw-bolder fs-3 text-black">simple List - grid view</h1>
         <hr className="w-25" />

@@ -3,7 +3,9 @@ import { Home } from "../pages/Home";
 import { Layout } from "../pages/Layout";
 import PropertyLists from "../pages/PropertyLists";
 import About from "../pages/about";
-import Login from "../pages/login";
+import Login from "..//pages/login";
+// import Loading from "../component/Loading";
+
 function App() {
   return (
     <>
@@ -13,7 +15,8 @@ function App() {
           <Route path="PropertyLists" element={<PropertyLists />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<Error />} />
-          <Route path="login" element={<Login />}></Route>
+
+          <Route path="Login" element={<Login />}></Route>
         </Route>
       </Routes>
     </>

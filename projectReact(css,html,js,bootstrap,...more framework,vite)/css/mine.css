@@ -67,6 +67,9 @@
   box-shadow: 0 0.5rem 1rem #0000002b;
   transform: translate(0, -0.5rem);
 }
+.boxSizing {
+  box-sizing: border-box;
+}
 
 /* /sm */
 @media (min-width: 320px) {
@@ -89,4 +92,11 @@
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+}
+#intro {
+  background-image: url(https://mdbootstrap.com/img/new/fluid/city/008.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
 }
