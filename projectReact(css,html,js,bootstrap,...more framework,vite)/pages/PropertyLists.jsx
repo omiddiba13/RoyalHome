@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { PropertyCard } from "../component/PropertyCard";
-import a from "../public/images/fe-property-img-2.jpg";
+import PropertyCard from "../component/PropertyCard";
+import a from "../public/images/A1.jpg";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { AiFillCaretRight } from "react-icons/ai";
 import {
@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa6";
 import TopRated from "../component/Toprate";
 import Breadcrumb from "../component/breadcrumb";
+import ListSet from "../component/ListsComoment/listSet";
 
 export default function PropertyLists() {
   return (
@@ -326,7 +327,8 @@ export default function PropertyLists() {
                 </div>
               </div>
               <div className="mt-3">
-                <div className="col-12">
+                <ListSet/>
+                {/* <div className="col-12">
                   <div className="row">
                     <div className="col p-1 mt-2">
                       <PropertyCard
@@ -413,7 +415,7 @@ export default function PropertyLists() {
                       />
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

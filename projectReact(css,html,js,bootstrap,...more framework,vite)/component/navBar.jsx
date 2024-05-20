@@ -29,7 +29,7 @@ export default function NavBar() {
             />
           </span>
         </button>
-        <Link to="login" className=" btn ms-3 d-lg-none ">
+        <Link to="User/login" className=" btn ms-3 d-lg-none ">
           <FaRegUser
             size={20}
             style={{
@@ -51,7 +51,7 @@ export default function NavBar() {
             </NavLink>
           </div>
           <Link
-            to="Login"
+            to="User/login"
             className=" btn btn-danger-v2 ms-2 d-none d-lg-block">
             login
           </Link>

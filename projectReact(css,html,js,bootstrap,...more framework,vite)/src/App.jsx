@@ -3,8 +3,9 @@ import { Home } from "../pages/Home";
 import { Layout } from "../pages/Layout";
 import PropertyLists from "../pages/PropertyLists";
 import About from "../pages/about";
-import Login from "..//pages/login";
-// import Loading from "../component/Loading";
+import User from "../pages/userPages/user";
+import Login from "../pages/userPages/login";
+import SignUp from "../pages/userPages/SignUp";
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
           <Route path="PropertyLists" element={<PropertyLists />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<Error />} />
-
-          <Route path="Login" element={<Login />}></Route>
+          <Route path="User" element={<User />}>
+            <Route path="login" element={<Login />} />
+            <Route path="SignUp" element={<SignUp />} />
+          </Route>
         </Route>
       </Routes>
     </>

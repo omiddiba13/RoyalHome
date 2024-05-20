@@ -9,8 +9,9 @@ import {
 } from "react-icons/fa";
 import { FaArrowRightArrowLeft, FaLocationDot } from "react-icons/fa6";
 import { NavLink } from "react-router-dom";
+import React from "react";
 
-export const PropertyCard = ({
+export default function PropertyCard({
   properyPic,
   agentPic,
   propetyPrice,
@@ -27,13 +28,13 @@ export const PropertyCard = ({
   forRent,
   forSale,
   animated,
-}) => {
+}) {
   return (
     <div
-      className="border border-secondary border-opacity-50 rounded-2 overflow-hidden bg-white"
+      className="border border-secondary border-opacity-100 p-1 rounded-3 overflow-hidden bg-white m-auto col"
       data-animated={animated}>
       <div className="position-relative">
-        <img src={properyPic} alt={propertTitle} className="w-100" />
+        <img src={properyPic} alt={propertTitle} className="w-100 rounded" />
         <div className="position-absolute top-0 start-0 bottom-0 end-0  d-flex flex-column justify-content-between">
           <div className=" d-flex align-items-start">
             {forRent && (
@@ -125,4 +126,4 @@ export const PropertyCard = ({
       </div>
     </div>
   );
-};
+}
