@@ -31,7 +31,7 @@ export default function PropertyCard({
 }) {
   return (
     <div
-      className="border border-secondary border-opacity-100 p-1 rounded-3 overflow-hidden bg-white m-auto col"
+      className="border border-secondary border-opacity-100 p-2 rounded-3 overflow-hidden bg-white card  "
       data-animated={animated}>
       <div className="position-relative">
         <img src={properyPic} alt={propertTitle} className="w-100 rounded" />
@@ -62,7 +62,7 @@ export default function PropertyCard({
             )}
           </div>
           <div className="d-flex align-items-start px-4 py-2">
-            <span className="text-white fw-bold fs-5"> {propetyPrice}</span>
+            <span className="text-white fw-bold fs-4"> $ {propetyPrice}</span>
 
             <button className="btn ms-auto p-0">
               <span className="fa-stack fa-2x">
@@ -83,11 +83,11 @@ export default function PropertyCard({
       <div className="p-3">
         <div className="text-danger"> {propertyCategory}</div>
         <h3>
-          <NavLink className="link-dark-v2 text-decoration-none fs-5">
+          <NavLink className="link-dark-v2 text-decoration-none fs-5 text-break text-truncate">
             {propertTitle}
           </NavLink>
         </h3>
-        <p className="text-secondary">
+        <p className="text-secondary fs-6 text-break text-uppercase text-truncate">
           <FaLocationDot />
           {propertAddress}
         </p>

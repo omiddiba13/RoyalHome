@@ -285,7 +285,7 @@ export const Home = () => {
                 </SwiperSlide>
               </Swiper>
               <div className="text-center m-3">
-                <Link className="btn btn-danger-v2  text-decoration-none">
+                <Link className="btn btn-danger-v2 text-decoration-none">
                   View More
                 </Link>
               </div>
