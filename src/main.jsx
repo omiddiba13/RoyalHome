@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import "../css/custom.css";
 import "../css/mine.css";
 
-import "../tailWind.css";
+// import "../tailWind.css";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>

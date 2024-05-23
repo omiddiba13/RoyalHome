@@ -3,7 +3,7 @@ import PropertyCard from "../PropertyCard";
 
 ///images
 import B from "./images/AL1.jpg";
-import Pagination from "../Pagination";
+// import Pagination from "../Pagination";
 //
 export default function ListSet({ h1 }) {
   const [properties, setPropertise] = useState([]);
@@ -45,7 +45,6 @@ export default function ListSet({ h1 }) {
           </div>
         </div>
       </div>{" "}
-      <Pagination />
     </>
   );
 }
