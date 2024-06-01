@@ -31,8 +31,9 @@ export default function PropertyCard({
 }) {
   return (
     <div
-      className="border border-secondary border-opacity-100 p-2 rounded-3 overflow-hidden bg-white card  "
-      data-animated={animated}>
+      className="border border-secondary border-opacity-100 rounded-3 overflow-hidden bg-white p-1 "
+      data-animated={animated}
+      style={{ width: "25rem", margin: "1rem" }}>
       <div className="position-relative">
         <img src={properyPic} alt={propertTitle} className="w-100 rounded" />
         <div className="position-absolute top-0 start-0 bottom-0 end-0  d-flex flex-column justify-content-between">

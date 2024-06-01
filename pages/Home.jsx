@@ -58,7 +58,7 @@ export const Home = () => {
               <Swiper
                 className="pb-5"
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
-                spaceBetween={50}
+                spaceBetween={0}
                 slidesPerView={3}
                 pagination={{ clickable: true }}
                 onSwiper={swiper => console.log(swiper)}
@@ -88,6 +88,7 @@ export const Home = () => {
                 <SwiperSlide>
                   <div>
                     <PropertyCard
+                      style={{ width: "30rem", margin: "1rem" }}
                       properyPic={a}
                       propetyPrice={"$300,200"}
                       propertyCategory={"House"}

@@ -151,6 +151,44 @@
       "forRent": true,
       "forSale": false,
       "animated": true
+    },
+    {
+      "id": 9,
+      "propertyPic": "https://example.com/property8.jpg",
+      "agentPic": "https://example.com/agent8.jpg",
+      "propertyPrice": 950000,
+      "propertyCategory": "Ranch",
+      "propertyTitle": "Ranch House in Dallas",
+      "propertyAddress": "2020 Ranch Rd, Dallas, TX, USA",
+      "propertyBed": 4,
+      "propertyBath": 3,
+      "propertySq": 3200,
+      "agentName": "Anna White",
+      "agentCategory": "Ranch Specialist",
+      "showAddFavorite": false,
+      "showHot": true,
+      "forRent": true,
+      "forSale": false,
+      "animated": true
+    },
+    {
+      "id": 10,
+      "propertyPic": "https://example.com/property8.jpg",
+      "agentPic": "https://example.com/agent8.jpg",
+      "propertyPrice": 950000,
+      "propertyCategory": "Ranch",
+      "propertyTitle": "Ranch House in Dallas",
+      "propertyAddress": "2020 Ranch Rd, Dallas, TX, USA",
+      "propertyBed": 4,
+      "propertyBath": 3,
+      "propertySq": 3200,
+      "agentName": "Anna White",
+      "agentCategory": "Ranch Specialist",
+      "showAddFavorite": false,
+      "showHot": true,
+      "forRent": true,
+      "forSale": false,
+      "animated": true
     }
   ]
 }

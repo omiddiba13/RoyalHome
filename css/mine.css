@@ -100,3 +100,7 @@
   width: 100%;
   background-size: cover;
 }
+.cardSpace {
+  margin: 5px !important;
+  padding: 5px;
+}
