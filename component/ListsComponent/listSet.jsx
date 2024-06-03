@@ -26,7 +26,7 @@ export default function ListSet({ h1 }) {
             <div className="row justify-content-center">
               {properties.map(property => (
                 <PropertyCard
-                  key={property.id}
+                  key={property.id }
                   properyPic={B}
                   propetyPrice={property.propertyPrice}
                   propertyCategory={property.propertyCategory}

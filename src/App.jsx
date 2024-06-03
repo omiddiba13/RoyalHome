@@ -6,6 +6,8 @@ import About from "../pages/about";
 import User from "../pages/userPages/user";
 import Login from "../pages/userPages/login";
 import SignUp from "../pages/userPages/SignUp";
+import { Properties } from "../pages/Properties";
+import { PropertiesPages } from "../pages/PropertiesPages";
 
 function App() {
   return (
@@ -16,6 +18,10 @@ function App() {
           <Route path="PropertyLists" element={<PropertyLists />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<Error />} />
+          <Route path="/Properties" element={<Properties />}></Route>
+          <Route
+            path="/Properties/:PropertiesID"
+            element={<PropertiesPages />}></Route>
           <Route path="User" element={<User />}>
             <Route path="login" element={<Login />} />
             <Route path="SignUp" element={<SignUp />} />

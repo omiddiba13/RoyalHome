@@ -4,6 +4,7 @@ import PropertyCard from "../component/PropertyCard";
 import a from "../public/images/A1.jpg";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { AiFillCaretRight } from "react-icons/ai";
+import { Properties } from "./Properties";
 import {
   FaEllipsisVertical,
   FaCaretRight,
@@ -12,7 +13,7 @@ import {
 } from "react-icons/fa6";
 import TopRated from "../component/Toprate";
 import Breadcrumb from "../component/breadcrumb";
-import ListSet from "../component/ListsComoment/listSet";
+// import ListSet from "../component/ListsComponet/listSet";
 
 export default function PropertyLists() {
   return (
@@ -327,95 +328,7 @@ export default function PropertyLists() {
                 </div>
               </div>
               <div className="mt-3">
-                <ListSet/>
-                {/* <div className="col-12">
-                  <div className="row">
-                    <div className="col p-1 mt-2">
-                      <PropertyCard
-                        properyPic={a}
-                        propetyPrice={"$300,200"}
-                        propertyCategory={"House"}
-                        propertTitle={"Modern Apartments"}
-                        propertAddress={
-                          "1421 San Pedro St, Los Angeles, CA 90015"
-                        }
-                        propertybed={2}
-                        propertyBath={2}
-                        propertySq={4000}
-                        agentName={"Johnathan Doe 2"}
-                        agentCategory={"Estate Agents 2"}
-                        showAddFavorite={true}
-                        showHot={true}
-                        forRent={true}
-                        forSale={false}
-                        animated={true}
-                      />
-                    </div>{" "}
-                    <div className="col p-1 mt-2">
-                      <PropertyCard
-                        properyPic={a}
-                        propetyPrice={"$300,200"}
-                        propertyCategory={"House"}
-                        propertTitle={"Modern Apartments"}
-                        propertAddress={
-                          "1421 San Pedro St, Los Angeles, CA 90015"
-                        }
-                        propertybed={2}
-                        propertyBath={2}
-                        propertySq={4000}
-                        agentName={"Johnathan Doe 2"}
-                        agentCategory={"Estate Agents 2"}
-                        showAddFavorite={true}
-                        showHot={true}
-                        forRent={true}
-                        forSale={false}
-                        animated={true}
-                      />
-                    </div>{" "}
-                    <div className="col p-1 mt-2">
-                      <PropertyCard
-                        properyPic={a}
-                        propetyPrice={"$300,200"}
-                        propertyCategory={"House"}
-                        propertTitle={"Modern Apartments"}
-                        propertAddress={
-                          "1421 San Pedro St, Los Angeles, CA 90015"
-                        }
-                        propertybed={2}
-                        propertyBath={2}
-                        propertySq={4000}
-                        agentName={"Johnathan Doe 2"}
-                        agentCategory={"Estate Agents 2"}
-                        showAddFavorite={true}
-                        showHot={true}
-                        forRent={true}
-                        forSale={false}
-                        animated={true}
-                      />
-                    </div>{" "}
-                    <div className="col p-1 mt-2">
-                      <PropertyCard
-                        properyPic={a}
-                        propetyPrice={"$300,200"}
-                        propertyCategory={"House"}
-                        propertTitle={"Modern Apartments"}
-                        propertAddress={
-                          "1421 San Pedro St, Los Angeles, CA 90015"
-                        }
-                        propertybed={2}
-                        propertyBath={2}
-                        propertySq={4000}
-                        agentName={"Johnathan Doe 2"}
-                        agentCategory={"Estate Agents 2"}
-                        showAddFavorite={true}
-                        showHot={true}
-                        forRent={true}
-                        forSale={false}
-                        animated={true}
-                      />
-                    </div>
-                  </div>
-                </div> */}
+                <Properties />
               </div>
             </div>
           </div>

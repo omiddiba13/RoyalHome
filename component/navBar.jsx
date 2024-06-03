@@ -49,6 +49,9 @@ export default function NavBar() {
             <NavLink to="PropertyLists" className="nav-link fs-5">
               Property
             </NavLink>
+            {/* <NavLink to="/Properties" className="nav-link fs-5">
+              Properties
+            </NavLink> */}
           </div>
           <Link
             to="User/login"

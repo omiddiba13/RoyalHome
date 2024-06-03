@@ -11,7 +11,7 @@ import { FaArrowRightArrowLeft, FaLocationDot } from "react-icons/fa6";
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 
-export default function PropertyCard({
+export default function PropertyCardForSw({
   properyPic,
   agentPic,
   propetyPrice,
@@ -33,8 +33,7 @@ export default function PropertyCard({
   return (
     <div
       className="border p-2 border-secondary border-opacity-100 rounded-3 overflow-hidden bg-white"
-      data-animated={animated}
-      style={{ width: "18rem", margin:'5px' }}>
+      data-animated={animated}>
       <div className="position-relative">
         <img src={properyPic} alt={propertTitle} className="w-100 rounded" />
         <div className="position-absolute top-0 start-0 bottom-0 end-0  d-flex flex-column justify-content-between">
