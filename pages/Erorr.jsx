@@ -2,5 +2,5 @@ import React from "react";
 Error;
 
 export const Error = () => {
-  return <div>Page Not Found</div>;
+	return <div className="alert-danger">Page Not Found</div>;
 };
